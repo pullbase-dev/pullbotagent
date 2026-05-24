@@ -1,0 +1,41 @@
+{
+  "name": "pullbotagent",
+  "version": "1.0.0",
+  "description": "AI discussion bot for PullBase — responds to @pullbotagent mentions in model discussions and pull requests.",
+  "main": "dist/pullbot.js",
+  "types": "dist/pullbot.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/pullbot.ts",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "pullbase",
+    "ai-bot",
+    "discussion-bot",
+    "openai",
+    "drizzle-orm",
+    "ipfs",
+    "base-l2"
+  ],
+  "author": "pullbase-dev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pullbase-dev/pullbotagent.git"
+  },
+  "homepage": "https://pullbase.net",
+  "dependencies": {
+    "drizzle-orm": "^0.30.0",
+    "openai": "^4.0.0",
+    "postgres": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
